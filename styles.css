@@ -332,3 +332,20 @@ h1,h2,h3,p{margin-top:0}
  .product-price-inquiry{min-height:31px}
  .product-price-inquiry strong{font-size:13px}
 }
+
+/* Ecommerce category tabs and hero card-payment message */
+.hero-installment{position:absolute;z-index:5;right:max(5vw,28px);bottom:157px;margin:0;color:rgba(255,255,255,.9);font-size:clamp(13px,1.15vw,16px);font-weight:500;letter-spacing:-.025em;text-align:right}
+.hero-installment strong{color:var(--orange);font-weight:700}
+.shop-tabs{display:flex;gap:8px;overflow-x:auto;margin:0 0 22px;padding:2px 0 7px;scrollbar-width:thin;scrollbar-color:rgba(21,21,18,.4) transparent}
+.shop-tab{flex:none;min-height:39px;padding:0 16px;border:1px solid rgba(21,21,18,.19);border-radius:99px;background:rgba(255,255,255,.36);color:var(--ink);font:600 10px 'DM Sans',sans-serif;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.shop-tab:hover{transform:translateY(-2px);border-color:var(--ink)}
+.shop-tab.is-active{border-color:var(--ink);background:var(--ink);color:#fff}
+.product-card[hidden],.shop-empty[hidden]{display:none!important}
+.shop-empty{margin:8px 0 0;padding:24px;border:1px solid rgba(21,21,18,.13);border-radius:16px;background:rgba(255,255,255,.55);font-size:13px;line-height:1.7}
+.shop-empty a{color:var(--ink);font-weight:700;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:3px}
+@media(max-width:640px){
+ .hero-installment{right:15px;bottom:128px;max-width:calc(100vw - 30px);font-size:11px;line-height:1.4}
+ .shop-tabs{gap:6px;margin-bottom:15px;padding-bottom:8px}
+ .shop-tab{min-height:35px;padding:0 13px;font-size:9px}
+ .shop-empty{padding:17px;font-size:11px}
+}

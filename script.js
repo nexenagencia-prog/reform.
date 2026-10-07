@@ -39,21 +39,6 @@ document.querySelector('#year').textContent = new Date().getFullYear();
 const productCards = [...document.querySelectorAll('.product-card')];
 const shopTabs = [...document.querySelectorAll('.shop-tab')];
 const shopEmpty = document.querySelector('.shop-empty');
-const collectionGrid = document.querySelector('.collection-grid');
-const collectionBrowser = document.querySelector('.collection-browser');
-const catalogProductGrid = document.querySelector('#catalog-product-grid');
-const catalogNoProducts = document.querySelector('.catalog-no-products');
-const catalogTitle = document.querySelector('.catalog-title');
-const catalogCurrentCategory = document.querySelector('.catalog-current-category');
-const catalogTabs = [...document.querySelectorAll('.catalog-category')];
-const catalogCategoryNames = {
-  revestimentos: 'Revestimentos',
-  construcao: 'Construção',
-  ferramentas: 'Ferramentas',
-  tintas: 'Tintas',
-  loucas: 'Louças & metais',
-  banheiro: 'Banheiro',
-};
 
 function filterProducts(category) {
   const visibleCards = productCards.filter((card) => {
@@ -75,56 +60,9 @@ shopTabs.forEach((tab) => {
   tab.addEventListener('click', () => filterProducts(tab.dataset.productFilter));
 });
 
-function showCatalogCategory(category) {
-  if (!catalogProductGrid) return;
-  const name = catalogCategoryNames[category] || catalogCategoryNames.construcao;
-  const matchingCards = productCards.filter((card) => card.dataset.category === category);
-  catalogProductGrid.replaceChildren(...matchingCards.map((card) => {
-    const product = card.cloneNode(true);
-    product.hidden = false;
-    product.classList.add('is-visible');
-    return product;
-  }));
-  updateCart();
-
-  if (catalogTitle) catalogTitle.textContent = name;
-  if (catalogCurrentCategory) catalogCurrentCategory.textContent = name.toUpperCase();
-  if (catalogNoProducts) catalogNoProducts.hidden = matchingCards.length > 0;
-  catalogTabs.forEach((tab) => {
-    const active = tab.dataset.catalogCategory === category;
-    tab.classList.toggle('is-active', active);
-    tab.setAttribute('aria-selected', String(active));
-  });
-}
-
-function openCatalog(category) {
-  if (!collectionGrid || !collectionBrowser) return;
-  collectionGrid.hidden = true;
-  collectionBrowser.hidden = false;
-  collectionBrowser.classList.remove('is-open');
-  requestAnimationFrame(() => collectionBrowser.classList.add('is-open'));
-  showCatalogCategory(category);
-}
-
-function closeCatalog() {
-  if (!collectionGrid || !collectionBrowser) return;
-  collectionBrowser.hidden = true;
-  collectionBrowser.classList.remove('is-open');
-  collectionGrid.hidden = false;
-}
-
 document.querySelectorAll('.collection-card[data-product-filter]').forEach((card) => {
-  card.addEventListener('click', (event) => {
-    event.preventDefault();
-    openCatalog(card.dataset.productFilter);
-  });
+  card.addEventListener('click', () => filterProducts(card.dataset.productFilter));
 });
-
-catalogTabs.forEach((tab) => {
-  tab.addEventListener('click', () => showCatalogCategory(tab.dataset.catalogCategory));
-});
-
-document.querySelector('.catalog-back')?.addEventListener('click', closeCatalog);
 
 const cart = new Map();
 const cartPanel = document.querySelector('.shop-cart');

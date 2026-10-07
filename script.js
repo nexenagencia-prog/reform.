@@ -85,6 +85,7 @@ function showCatalogCategory(category) {
     product.classList.add('is-visible');
     return product;
   }));
+  updateCart();
 
   if (catalogTitle) catalogTitle.textContent = name;
   if (catalogCurrentCategory) catalogCurrentCategory.textContent = name.toUpperCase();

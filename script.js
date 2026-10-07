@@ -36,6 +36,34 @@ if (reduceMotion || !('IntersectionObserver' in window)) {
 
 document.querySelector('#year').textContent = new Date().getFullYear();
 
+const productCards = [...document.querySelectorAll('.product-card')];
+const shopTabs = [...document.querySelectorAll('.shop-tab')];
+const shopEmpty = document.querySelector('.shop-empty');
+
+function filterProducts(category) {
+  const visibleCards = productCards.filter((card) => {
+    const matches = category === 'todos' || card.dataset.category === category;
+    card.hidden = !matches;
+    return matches;
+  });
+
+  shopTabs.forEach((tab) => {
+    const active = tab.dataset.productFilter === category;
+    tab.classList.toggle('is-active', active);
+    tab.setAttribute('aria-selected', String(active));
+  });
+
+  if (shopEmpty) shopEmpty.hidden = visibleCards.length > 0;
+}
+
+shopTabs.forEach((tab) => {
+  tab.addEventListener('click', () => filterProducts(tab.dataset.productFilter));
+});
+
+document.querySelectorAll('.collection-card[data-product-filter]').forEach((card) => {
+  card.addEventListener('click', () => filterProducts(card.dataset.productFilter));
+});
+
 const cart = new Map();
 const cartPanel = document.querySelector('.shop-cart');
 const cartCount = document.querySelector('.cart-count');

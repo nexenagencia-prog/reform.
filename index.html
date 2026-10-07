@@ -17,6 +17,7 @@
       <a class="brand" href="#topo" aria-label="Reforme, início"><img src="/assets/reforme-logo.png" alt="Reform." /></a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#comprar">Produtos</a>
         <a href="#materiais">Materiais</a>
         <a href="#loja">A loja</a>
         <a href="#solucoes">Soluções</a>
@@ -27,46 +28,94 @@
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-store-photo" aria-hidden="true"></div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-grain" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow"><span class="eyebrow-line"></span>Materiais para construção e reforma</p>
           <h1 id="hero-title">Sua obra.<br /><em>Do seu jeito.</em></h1>
-          <p class="hero-copy">Tudo o que faz uma ideia sair do papel e ganhar forma, com escolhas mais simples em cada etapa.</p>
+          <p class="hero-copy">Tudo o que você precisa para sua construção e reforma, você encontra aqui.</p>
           <div class="hero-actions">
-            <a class="button button-orange" href="#materiais">Explore os materiais <span aria-hidden="true">↗</span></a>
+            <a class="button button-orange" href="#comprar">Explore os materiais <span aria-hidden="true">↗</span></a>
             <a class="text-link text-link-light" href="#loja">Conheça a Reforme <span aria-hidden="true">↓</span></a>
           </div>
         </div>
         <div class="hero-side-note"><span>01</span><span class="side-rule"></span><span>CONSTRUIR<br />É TRANSFORMAR</span></div>
-        <a class="hero-bottom" href="#materiais"><span>Desça para explorar</span><span class="scroll-line"></span></a>
+        <a class="hero-bottom" href="#comprar"><span>Desça para explorar</span><span class="scroll-line"></span></a>
         <div class="hero-photo-caption"><span>REFORME.</span><span>MATERIAIS PARA CONSTRUIR E REFORMAR</span></div>
       </section>
 
+      <section class="shop-section section-pad" id="comprar" aria-labelledby="shop-title">
+        <div class="shop-heading reveal">
+          <div>
+            <div class="section-kicker"><span>02 / ESCOLHAS DA REFORME</span><span class="kicker-rule"></span></div>
+            <h2 id="shop-title">Sua obra começa<br />pelas <em>boas escolhas.</em></h2>
+          </div>
+          <p>Produtos para tirar o projeto do papel. Monte sua lista e fale com a equipe Reforme.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-image product-window"><img src="/assets/window-eucalyptus.webp" alt="Janela pantográfica de madeira de eucalipto" loading="lazy" /><span class="product-category">MADEIRA</span><button class="product-add" type="button" aria-pressed="false" data-product="Janela pantográfica eucalipto" data-price="699.00">Adicionar à lista <span aria-hidden="true">+</span></button></div>
+            <div class="product-info"><p class="product-brand">REFORME / ABERTURAS</p><h3>Janela pantográfica eucalipto</h3><div class="product-price"><span>R$</span><strong>699</strong><small>,00</small></div></div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-image"><img src="/assets/cement-stack.webp" alt="Pilha de sacos de cimento em ambiente interno" loading="lazy" /><span class="product-category">VOTORAN</span><button class="product-add" type="button" aria-pressed="false" data-product="Cimento Votoran" data-price="55.90">Adicionar à lista <span aria-hidden="true">+</span></button></div>
+            <div class="product-info"><p class="product-brand">REFORME / ESTRUTURA</p><h3>Cimento Votoran</h3><div class="product-price"><span>R$</span><strong>55</strong><small>,90</small></div></div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-image"><img src="/assets/shower-space.webp" alt="Ducha elétrica moderna Space Power" loading="lazy" /><span class="product-category">127 V</span><button class="product-add" type="button" aria-pressed="false" data-product="Ducha Space Power 127 V" data-price="99.80">Adicionar à lista <span aria-hidden="true">+</span></button></div>
+            <div class="product-info"><p class="product-brand">REFORME / HIDRÁULICA</p><h3>Ducha Space Power</h3><div class="product-detail">127 V</div><div class="product-price"><span>R$</span><strong>99</strong><small>,80</small></div></div>
+          </article>
+          <article class="product-card reveal">
+            <div class="product-image"><img src="/assets/nails-17x27.webp" alt="Pregos metálicos novos em uma embalagem neutra" loading="lazy" /><span class="product-category">AVANTE</span><button class="product-add" type="button" aria-pressed="false" data-product="Prego 17 por 27 Avante" data-price="13.90">Adicionar à lista <span aria-hidden="true">+</span></button></div>
+            <div class="product-info"><p class="product-brand">REFORME / FIXAÇÃO</p><h3>Prego 17×27 Avante</h3><div class="product-price"><span>R$</span><strong>13</strong><small>,90</small></div></div>
+          </article>
+        </div>
+        <div class="shop-cart" id="lista-de-compras" hidden aria-live="polite">
+          <div><strong class="cart-count">0 produtos na lista</strong><span class="cart-total">Subtotal estimado: R$ 0,00</span></div>
+          <a class="button button-dark cart-whatsapp" href="#contato">Continuar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="shop-footnote">Valores informados para esta vitrine. Consulte disponibilidade e condições com a equipe.</p>
+      </section>
+
+      <section class="card-promo" aria-labelledby="card-promo-title">
+        <img class="card-promo-photo" src="/assets/card-holder.webp" alt="Cliente segurando um cartão durante uma reforma" loading="lazy" />
+        <div class="card-promo-shade"></div>
+        <div class="card-promo-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span>Mais espaço para realizar</p>
+          <h2 id="card-promo-title">Faça seu<br />Cartão Reforme.</h2>
+          <p>Reforme agora e parcele suas compras em até <strong>18 vezes fixas.</strong></p>
+          <a class="button button-orange" href="#contato">Quero saber mais <span aria-hidden="true">↗</span></a>
+          <small>Consulte condições com a equipe.</small>
+        </div>
+        <div class="promo-card-mark" aria-hidden="true"><img src="/assets/reforme-logo.png" alt="" /><span>REFORME / CARTÃO</span></div>
+      </section>
+
       <section class="intro section-pad" id="materiais">
-        <div class="section-kicker reveal"><span>01 / VITRINE REFORME</span><span class="kicker-rule"></span></div>
+        <div class="section-kicker reveal"><span>03 / MATERIAIS POR CATEGORIA</span><span class="kicker-rule"></span></div>
         <div class="intro-heading reveal">
           <h2>Encontre o que<br />sua obra <em>pede.</em></h2>
           <p>Do primeiro pincel ao último detalhe, escolha uma categoria e converse com a equipe para encontrar o material certo.</p>
         </div>
         <div class="category-grid">
           <a class="category-card category-large reveal" href="#contato" aria-label="Consultar tintas e acabamentos">
-            <img class="category-photo" src="https://images.unsplash.com/photo-1693985120993-e9b203ce7631?auto=format&fit=crop&w=1500&q=85" alt="Pessoa pintando uma parede com rolo" loading="lazy" />
+            <img class="category-photo" src="/assets/paint-terracotta.webp" alt="Pessoa pintando uma parede terracota em uma sala" loading="lazy" />
             <span class="category-number">01 / TINTAS</span>
             <span class="category-content"><span class="category-label">TINTAS & ACABAMENTOS</span><strong>Cor que muda<br />o ambiente.</strong><span class="category-action">Explorar categoria <span class="category-arrow" aria-hidden="true">↗</span></span></span>
           </a>
           <a class="category-card category-tools reveal" href="#contato" aria-label="Consultar ferramentas">
-            <img class="category-photo" src="https://images.unsplash.com/photo-1670645948769-aee9ff92d59f?auto=format&fit=crop&w=1100&q=85" alt="Ferramentas organizadas em uma parede de oficina" loading="lazy" />
+            <img class="category-photo" src="/assets/tools-pegboard.webp" alt="Ferramentas novas organizadas em um painel preto perfurado" loading="lazy" />
             <span class="category-number">02 / FERRAMENTAS</span>
             <span class="category-content"><span class="category-label">FERRAMENTAS</span><strong>As certas para<br />cada etapa.</strong><span class="category-action">Explorar categoria <span class="category-arrow" aria-hidden="true">↗</span></span></span>
           </a>
           <a class="category-card category-cement reveal" href="#contato" aria-label="Consultar cimento e argamassa">
-            <img class="category-photo" src="https://images.unsplash.com/photo-1773394089934-3e29f2a3d6a9?auto=format&fit=crop&w=1100&q=85" alt="Sacos de cimento organizados para construção" loading="lazy" />
+            <img class="category-photo" src="/assets/cement-stack.webp" alt="Sacos de cimento empilhados de forma organizada em ambiente interno" loading="lazy" />
+            <span class="category-brand">VOTORAN</span>
             <span class="category-number">03 / ESTRUTURA</span>
             <span class="category-content"><span class="category-label">CIMENTO & ARGAMASSA</span><strong>Uma base<br />bem feita.</strong><span class="category-action">Explorar categoria <span class="category-arrow" aria-hidden="true">↗</span></span></span>
           </a>
           <a class="category-card category-finishes reveal" href="#contato" aria-label="Consultar pisos e revestimentos">
-            <img class="category-photo" src="https://images.unsplash.com/photo-1666594406463-84956e388260?auto=format&fit=crop&w=1100&q=85" alt="Textura de piso em placas cerâmicas" loading="lazy" />
+            <img class="category-photo" src="/assets/tiles-floor.webp" alt="Piso de porcelanato em ambiente iluminado" loading="lazy" />
             <span class="category-number">04 / ACABAMENTO</span>
             <span class="category-content"><span class="category-label">PISOS & REVESTIMENTOS</span><strong>O detalhe que<br />faz tudo.</strong><span class="category-action">Explorar categoria <span class="category-arrow" aria-hidden="true">↗</span></span></span>
           </a>
@@ -77,7 +126,7 @@
       <section class="store section-pad" id="loja">
         <div class="store-image reveal"><img src="/assets/loja-interior.webp" alt="Interior da loja Reforme, com ferramentas, materiais e madeiras organizados" loading="lazy" /><span class="image-tag">POR DENTRO DA REFORME <span>↗</span></span></div>
         <div class="store-copy reveal">
-          <div class="section-kicker"><span>02 / MAIS PERTO DA SUA OBRA</span><span class="kicker-rule"></span></div>
+          <div class="section-kicker"><span>04 / MAIS PERTO DA SUA OBRA</span><span class="kicker-rule"></span></div>
           <p class="eyebrow">Uma loja feita para construir</p>
           <h2>Mais do que<br />material.<br /><em>Um bom começo.</em></h2>
           <p>Ferramentas, madeiras, tintas e soluções para construção e reforma, reunidas em um só lugar para facilitar suas escolhas.</p>
@@ -88,7 +137,7 @@
 
       <section class="solutions section-pad" id="solucoes">
         <div class="solutions-top">
-          <div class="section-kicker reveal"><span>03 / DO PLANO À REALIZAÇÃO</span><span class="kicker-rule"></span></div>
+          <div class="section-kicker reveal"><span>05 / DO PLANO À REALIZAÇÃO</span><span class="kicker-rule"></span></div>
           <div class="solutions-title reveal"><h2>Reformar fica<br /><em>mais leve assim.</em></h2><p>Um espaço pensado para quem está começando, resolvendo ou dando o toque final.</p></div>
         </div>
         <div class="solution-grid">
@@ -102,7 +151,7 @@
         <img src="/assets/loja-fachada.webp" alt="Fachada da loja Reforme com estrutura preta, madeira e detalhes laranja" loading="lazy" />
         <div class="facade-overlay"></div>
         <div class="facade-copy reveal"><p class="eyebrow">REFORME / CONSTRUÇÃO & REFORMA</p><h2>O próximo passo<br />da sua obra <em>começa aqui.</em></h2><a class="button button-orange" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a></div>
-        <span class="facade-index">04 — REFORME</span>
+        <span class="facade-index">06 / REFORME</span>
       </section>
 
       <section class="contact section-pad" id="contato">

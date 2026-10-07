@@ -293,10 +293,10 @@ h1,h2,h3,p{margin-top:0}
 .product-price-inquiry{min-height:38px;align-items:center}
 .product-price-inquiry strong{font-size:15px;letter-spacing:-.025em;font-weight:600}
 .product-screws img,.product-cement-bag img,.product-coral img,.product-toilet img,.product-putty img{object-fit:contain;padding:16px}
-.product-hammer img,.product-pliers img,.product-drill img{object-fit:cover;padding:0}
-.product-hammer img{object-position:40% 30%}
-.product-pliers img{object-position:58% 42%}
-.product-drill img{object-position:12% 35%}
+.product-hammer img,.product-pliers img,.product-drill img{object-fit:contain;padding:16px}
+.product-hammer img{object-position:center}
+.product-pliers img{object-position:center}
+.product-drill img{object-position:center}
 .collection-feature{background:#e8e5dc;color:var(--ink)}
 .collection-heading{display:flex;align-items:end;justify-content:space-between;gap:34px;margin-bottom:40px}
 .collection-heading .section-kicker{margin-bottom:24px}

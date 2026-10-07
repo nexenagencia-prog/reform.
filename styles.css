@@ -359,3 +359,15 @@ h1,h2,h3,p{margin-top:0}
 /* Enquadramento ampliado da foto no card de ferramentas */
 .category-tools .category-photo{transform:scale(1.14)}
 .category-tools:hover .category-photo{transform:scale(1.19)}
+
+
+/* Cards de oferta da hero e preenchimento total da foto de ferramentas */
+.hero-material-card{width:166px;min-height:82px}
+.hero-material-card>span{gap:4px}
+.hero-material-card small{color:#f2a27e}
+.hero-material-card strong{font-size:10px}
+.hero-material-card em{color:#fff;font-size:10px;font-style:normal;font-weight:700;letter-spacing:.01em}
+.category-tools .category-photo{object-fit:cover;object-position:center;transform:scale(1);filter:none}
+.category-tools:hover .category-photo{transform:scale(1.035);filter:none}
+@media(max-width:900px){.hero-material-card{width:151px;min-height:78px}}
+@media(max-width:640px){.hero-material-card{width:calc((100vw - 42px)/3);min-height:66px;padding:5px;gap:5px}.hero-material-card small{font-size:5px;letter-spacing:.035em}.hero-material-card strong{font-size:8px}.hero-material-card em{font-size:8px}.hero-material-card img{width:34px;height:42px}.category-tools .category-photo{object-fit:cover;transform:none}.category-tools:hover .category-photo{transform:scale(1.02)}}

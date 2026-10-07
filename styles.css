@@ -355,3 +355,7 @@ h1,h2,h3,p{margin-top:0}
 .hero-installment{position:static;display:block;width:fit-content;max-width:min(540px,100%);margin:27px 0 0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none;color:rgba(255,255,255,.94);font-size:clamp(21px,2.25vw,29px);font-weight:600;line-height:1.25;letter-spacing:-.04em;text-align:left}
 .hero-installment strong{color:var(--orange);font-weight:800}
 @media(max-width:640px){.hero-installment{right:auto;bottom:auto;left:auto;width:auto;max-width:310px;margin-top:23px;font-size:clamp(18px,4.8vw,21px);line-height:1.28;text-align:left}}
+
+/* Enquadramento ampliado da foto no card de ferramentas */
+.category-tools .category-photo{transform:scale(1.14)}
+.category-tools:hover .category-photo{transform:scale(1.19)}

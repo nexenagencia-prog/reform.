@@ -245,7 +245,7 @@ h1,h2,h3,p{margin-top:0}
  .brand-type{font-size:25px}
  .hero{height:880px;min-height:760px;max-height:none;padding:96px 22px 128px;align-items:flex-start}
  .hero-content{margin-top:20px;max-width:100%;z-index:6}
- .hero-store-photo{background-size:auto 59%;background-position:66% bottom 44px;opacity:.98;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 17%);mask-image:linear-gradient(180deg,transparent 0%,#000 17%)}
+ .hero-store-photo{background-size:auto 48%;background-position:66% bottom 44px;opacity:.98;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 17%);mask-image:linear-gradient(180deg,transparent 0%,#000 17%)}
  .hero-overlay{background:linear-gradient(180deg,rgba(16,16,14,.58) 0%,rgba(16,16,14,.25) 39%,rgba(16,16,14,.12) 66%,rgba(16,16,14,.62) 100%)}
  .hero-material-cards{right:15px;bottom:66px;left:15px;justify-content:flex-end;gap:6px}
  .hero-material-card{width:calc((100vw - 42px)/3);min-height:53px;padding:5px;gap:5px;background:rgba(20,20,18,.8)}

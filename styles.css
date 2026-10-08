@@ -673,3 +673,31 @@ h1,h2,h3,p{margin-top:0}
   .hero-installment{bottom:-38px;font-size:14px}
   .hero-material-cards{bottom:50px}
 }
+
+
+/* Mobile hero composition aligned to the photo and offer cards */
+@media(max-width:640px){
+  .hero-store-photo{
+    top:-12%;right:0;bottom:-10%;left:0;width:100%;height:auto;
+    transform:translateY(8%);
+    background-size:cover;background-position:center 44%;
+  }
+  .hero-title-group{top:26%}
+  .hero-title-group .eyebrow{margin-top:18px}
+  .hero .eyebrow-line{display:none}
+  .hero h1{font-size:clamp(39px,11.8vw,52px);line-height:.92}
+  .hero-details-group{bottom:13%}
+  .hero-installment{
+    position:absolute;z-index:7;right:20px;bottom:132px;left:20px;
+    width:auto;max-width:none;margin:0;
+    font-size:clamp(15px,4vw,20px);line-height:1.18;text-align:center;
+  }
+}
+@media(max-width:380px){
+  .hero-store-photo{top:-10%;bottom:-8%;transform:translateY(7%);background-position:center 44%}
+  .hero-title-group{top:25%}
+  .hero-title-group .eyebrow{margin-top:14px}
+  .hero h1{font-size:clamp(38px,11.5vw,45px)}
+  .hero-details-group{bottom:0}
+  .hero-installment{bottom:128px;font-size:15px}
+}

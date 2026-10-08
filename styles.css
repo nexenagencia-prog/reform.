@@ -844,3 +844,16 @@ h1,h2,h3,p{margin-top:0}
   .hero-installment{bottom:222px;font-size:clamp(17px,5.35vw,20px)}
   .hero-material-cards{right:8px;bottom:150px;left:8px;gap:4px}
 }
+
+
+/* Move all mobile hero messaging and offers into one bottom stack */
+@media(max-width:640px){
+  .hero-title-group{top:41%}
+  .hero-material-cards{bottom:220px}
+  .hero-installment{bottom:150px}
+}
+@media(max-width:380px){
+  .hero-title-group{top:38%}
+  .hero-material-cards{bottom:172px}
+  .hero-installment{bottom:116px}
+}

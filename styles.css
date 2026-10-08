@@ -632,3 +632,18 @@ h1,h2,h3,p{margin-top:0}
   .category-grid{grid-auto-rows:minmax(200px,auto);gap:12px}
   .category-grid .category-large{min-height:300px}
 }
+
+
+/* Mobile hero copy: headline centered on the photo, supporting copy below it */
+@media(max-width:640px){
+  .hero-title-group{top:28%}
+  .hero-details-group{bottom:18px}
+  .hero-material-cards{right:10px;bottom:52px;left:10px}
+}
+@media(max-width:380px){
+  .hero{min-height:640px;aspect-ratio:auto}
+  .hero-content{top:68px;bottom:150px}
+  .hero-title-group{top:27%}
+  .hero-details-group{bottom:16px}
+  .hero-material-cards{right:8px;bottom:50px;left:8px}
+}

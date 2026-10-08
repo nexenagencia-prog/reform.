@@ -15,6 +15,9 @@ navigation?.querySelectorAll('a').forEach((link) => link.addEventListener('click
 
 document.querySelector('#year')?.replaceChildren(String(new Date().getFullYear()));
 const productGrid = document.querySelector('#product-grid');
+const promotionGrid = document.querySelector('#promotion-grid');
+const siteHome = document.querySelector('#site-home');
+const materialsView = document.querySelector('#catalogo');
 const shopTabs = [...document.querySelectorAll('.shop-tab')];
 const shopEmpty = document.querySelector('.shop-empty');
 const productSearch = document.querySelector('#product-search');
@@ -28,6 +31,28 @@ const money = (cents) => new Intl.NumberFormat('pt-BR', {style:'currency',curren
 const categoryNames = {"revestimentos":"Pisos & revestimentos","construcao":"Construção","tintas":"Tintas","banheiro":"Banheiros","cozinha":"Cozinha & lavanderia","eletro":"Eletro","climatizacao":"Climatização","ferramentas":"Ferramentas"};
 let activeCategory = 'todos';
 let productCards = [];
+
+function syncMaterialsView() {
+  const isOpen = window.location.hash.toLowerCase() === '#catalogo';
+  if (siteHome) siteHome.hidden = isOpen;
+  if (materialsView) materialsView.hidden = !isOpen;
+  if (isOpen) {
+    productCards.forEach((card) => card.classList.add('is-visible'));
+    filterProducts();
+  }
+  window.scrollTo(0, 0);
+}
+function openMaterials(category) {
+  if (category && shopTabs.some((tab) => tab.dataset.productFilter === category)) activeCategory = category;
+  window.history.pushState({view:'catalogo'}, '', '#catalogo');
+  syncMaterialsView();
+}
+function closeMaterials() {
+  window.history.replaceState({view:'home'}, '', '#topo');
+  syncMaterialsView();
+}
+window.addEventListener('popstate', syncMaterialsView);
+syncMaterialsView();
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 let revealObserver = null;
@@ -120,14 +145,18 @@ shopTabs.forEach((tab) => tab.addEventListener('click', () => {
   filterProducts();
 }));
 productSearch?.addEventListener('input', filterProducts);
-document.querySelectorAll('.collection-card[data-product-filter]').forEach((card) => {
-  card.addEventListener('click', () => {
-    const target = card.dataset.productFilter;
-    if (target && shopTabs.some((tab) => tab.dataset.productFilter === target)) {
-      activeCategory = target;
-      filterProducts();
-    }
-  });
+document.addEventListener('click', (event) => {
+  const open = event.target.closest('[data-open-materials]');
+  if (open) {
+    event.preventDefault();
+    openMaterials(open.dataset.productFilter);
+    return;
+  }
+  const close = event.target.closest('[data-close-materials]');
+  if (close) {
+    event.preventDefault();
+    closeMaterials();
+  }
 });
 
 function updateCart() {
@@ -165,6 +194,11 @@ fetch('/products.json')
   .then((items) => {
     if (!Array.isArray(items) || items.length !== 210) throw new Error('O catálogo precisa conter 210 produtos.');
     productGrid.replaceChildren(...items.map(renderProduct));
+    if (promotionGrid) {
+      const promotionCategories = ['revestimentos','construcao','tintas','banheiro','cozinha','ferramentas'];
+      const promotions = promotionCategories.map((category) => items.find((item) => item.category === category)).filter(Boolean);
+      promotionGrid.replaceChildren(...promotions.map(renderProduct));
+    }
     productCards = [...productGrid.querySelectorAll('.product-card')];
     productCards.forEach((item) => {
       if (revealObserver) revealObserver.observe(item);

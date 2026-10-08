@@ -899,3 +899,19 @@ h1,h2,h3,p{margin-top:0}
   .hero-title-group{top:94px}
   .hero h1{font-size:clamp(43px,12.3vw,50px);line-height:.95}
 }
+
+
+/* Mobile-only final spacing: clear title, no hero offer cards, stronger installment copy */
+@media(max-width:640px){
+  .hero-title-group{top:74px}
+  .hero h1{font-size:clamp(43px,11.8vw,48px);line-height:.95}
+  .hero-material-cards{display:none!important}
+  .hero-installment{
+    right:16px;bottom:112px;left:16px;width:auto;max-width:none;
+    font-size:clamp(19px,5.5vw,22px);line-height:1.16;text-align:center
+  }
+}
+@media(max-width:380px){
+  .hero-title-group{top:72px}
+  .hero-installment{bottom:105px;font-size:19px}
+}

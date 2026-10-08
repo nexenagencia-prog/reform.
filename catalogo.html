@@ -30,7 +30,7 @@
 <main class="page">
 <div class="crumb"><a href="/">Início</a><span>›</span><a href="/#colecoes">Materiais</a><span>›</span><strong id="crumb-current">Revestimentos</strong></div>
 <section class="catalog-heading"><div><p class="eyebrow">REFORME / CATÁLOGO</p><h1 id="page-title">Pisos e revestimentos</h1></div><p>Encontre os materiais para a sua obra. Filtre as opções, monte sua lista e consulte a equipe Reforme.</p></section>
-<p class="source-note">Produtos e valores de referência consultados na Cassol em 07/10/2026. Confirme disponibilidade e preço com a equipe Reforme.</p>
+<p class="source-note">Produtos, imagens e preços de referência da Reforme. Confirme valores e disponibilidade com nossa equipe.</p>
 <button class="mobile-filter" id="mobile-filter" type="button">Materiais e filtros <span>＋</span></button>
 <div class="layout">
 <aside class="sidebar" id="sidebar">
@@ -55,28 +55,28 @@
 </main>
 <aside class="summary" id="summary" hidden><div><strong id="summary-count">0 produtos na lista</strong><small id="summary-total">Subtotal estimado: R$ 0,00</small></div><button class="quote-btn" id="request-quote" type="button">Pedir orçamento ↗</button></aside>
 <script>
-const cassolImages='https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/';
+const productImages='https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/';
 const products=[
-{id:'1484731',name:'Piso Cerâmico Vulcano Bold Externo 50,5×50,5 Ilhabella',brand:'Ilhabella',type:'Piso cerâmico',category:'revestimentos',price:26.90,image:cassolImages+'7/9/79787976_1484731_1.jpg'},
-{id:'2016269',name:'Piso Laminado Click Minas Ouro Preto MLG3164 21,5×120 Málaga',brand:'Málaga',type:'Piso laminado',category:'revestimentos',price:69.90,image:cassolImages+'d/b/dbf05a14_2016269_1.jpg'},
-{id:'2136011',name:'Piso Cerâmico Everest Branco Bold Acetinado 53×53 Ilhabella',brand:'Ilhabella',type:'Piso cerâmico',category:'revestimentos',price:19.90,image:cassolImages+'d/c/dc213e87_2136011_1.jpg'},
-{id:'2103266',name:'Porcelanato Metropole Portland Retificado Externo 84×84 Eliane',brand:'Eliane',type:'Porcelanato',category:'revestimentos',price:62.90,image:cassolImages+'2/1/2103266_4.jpg'},
-{id:'1503821',name:'Porcelanato Carvalho Natural Retificado Acetinado 26×106 Biancogres',brand:'Biancogres',type:'Porcelanato',category:'revestimentos',price:84.90,image:cassolImages+'5/a/5a42e825_1503821_1.jpg'},
-{id:'2118390',name:'Piso Cerâmico Puglia Grigio Retificado Rústico 90,5×90,5 Incopisos',brand:'Incopisos',type:'Piso cerâmico',category:'revestimentos',price:34.90,image:cassolImages+'6/6/660a9e0e_2118390_1.jpg'},
-{id:'2031675',name:'Porcelanato York Soft Gray Hard Retificado Externo 120×120 Portinari',brand:'Portinari',type:'Porcelanato',category:'revestimentos',price:139.90,image:cassolImages+'c/8/c85f1ffc_2031675_1_1.jpg'},
-{id:'1984729',name:'Piso Vinílico Click Nobre Castanha 1,22×18,2 Málaga',brand:'Málaga',type:'Piso vinílico',category:'revestimentos',price:129.90,image:cassolImages+'a/c/ac2cfb03_1984729_4.jpg'},
-{id:'1984736',name:'Piso Vinílico SPC Click Nobre Jatobá 18×122 Málaga',brand:'Málaga',type:'Piso vinílico',category:'revestimentos',price:159.90,image:cassolImages+'3/3/332f8cbd_1984736_1.jpg'},
-{id:'2118383',name:'Piso Cerâmico Unique Gris Cimento Retificado Acetinado 90,5×90,5 Incopisos',brand:'Incopisos',type:'Piso cerâmico',category:'revestimentos',price:39.90,image:cassolImages+'5/9/5971e55e_2118383_1.jpg'},
-{id:'2087061',name:'Porcelanato Quartzo Cimento Retificado Acetinado 84×84 Eliane',brand:'Eliane',type:'Porcelanato',category:'revestimentos',price:71.90,image:cassolImages+'0/4/047854aa_2087061_1.jpg'},
-{id:'937559',name:'Revestimento de Parede Filetado Branco Retificado Acetinado Ceusa',brand:'Ceusa',type:'Revestimento de parede',category:'revestimentos',price:97.90,image:cassolImages+'f/f/ff39c93a_937559_1.jpg'},
-{id:'2128429',name:'Revestimento de Parede Branco Acetinado Charm Retificado Ilhabella',brand:'Ilhabella',type:'Revestimento de parede',category:'revestimentos',price:27.90,image:cassolImages+'a/4/a42e2f0d_2128429_1.jpg'},
-{id:'1883374',name:'Piso Laminado Click Prime Cacau 21,7×135,7 Eucafloor',brand:'Eucafloor',type:'Piso laminado',category:'revestimentos',price:79.90,image:cassolImages+'8/6/86aab1e1_1883374_1.jpg'},
-{id:'1885330',name:'Porcelanato Urban Off White HD Retificado Acetinado 84×84 Elizabeth',brand:'Elizabeth',type:'Porcelanato',category:'revestimentos',price:67.90,image:cassolImages+'1/8/1885330_1.jpg'},
-{id:'2115344',name:'Piso Vinílico Cola Basic Santiago Madeirado Bege Eucafloor',brand:'Eucafloor',type:'Piso vinílico',category:'revestimentos',price:69.90,image:cassolImages+'0/e/0ee7be60_2115344_1.jpg'},
-{id:'2118291',name:'Piso Cerâmico Urban Silver Retificado Acetinado 75,5×75,5 Incopisos',brand:'Incopisos',type:'Piso cerâmico',category:'revestimentos',price:29.90,image:cassolImages+'7/c/7cb243ca_2118291_1.jpg'},
-{id:'1938760',name:'Piso Laminado Click Fit Urucum 3003 21,5×120 Floorest',brand:'Floorest',type:'Piso laminado',category:'revestimentos',price:76.90,image:cassolImages+'8/b/8b92bed7_1938760_1.jpg'},
-{id:'2089959',name:'Piso Vinílico Autoadesivo Veneza 15,2×91,44 Málaga',brand:'Málaga',type:'Piso vinílico',category:'revestimentos',price:63.90,image:cassolImages+'4/2/42f8ab18_2089959_1.jpg'},
-{id:'2118598',name:'Piso Laminado Click Spot Dian Carvalho 18,7×134 Durafloor',brand:'Durafloor',type:'Piso laminado',category:'revestimentos',price:79.90,image:cassolImages+'3/1/31c8bf39_2118598_1.jpg'},
+{id:'1484731',name:'Piso Cerâmico Vulcano Bold Externo 50,5×50,5 Ilhabella',brand:'Ilhabella',type:'Piso cerâmico',category:'revestimentos',price:26.90,image:productImages+'7/9/79787976_1484731_1.jpg'},
+{id:'2016269',name:'Piso Laminado Click Minas Ouro Preto MLG3164 21,5×120 Málaga',brand:'Málaga',type:'Piso laminado',category:'revestimentos',price:69.90,image:productImages+'d/b/dbf05a14_2016269_1.jpg'},
+{id:'2136011',name:'Piso Cerâmico Everest Branco Bold Acetinado 53×53 Ilhabella',brand:'Ilhabella',type:'Piso cerâmico',category:'revestimentos',price:19.90,image:productImages+'d/c/dc213e87_2136011_1.jpg'},
+{id:'2103266',name:'Porcelanato Metropole Portland Retificado Externo 84×84 Eliane',brand:'Eliane',type:'Porcelanato',category:'revestimentos',price:62.90,image:productImages+'2/1/2103266_4.jpg'},
+{id:'1503821',name:'Porcelanato Carvalho Natural Retificado Acetinado 26×106 Biancogres',brand:'Biancogres',type:'Porcelanato',category:'revestimentos',price:84.90,image:productImages+'5/a/5a42e825_1503821_1.jpg'},
+{id:'2118390',name:'Piso Cerâmico Puglia Grigio Retificado Rústico 90,5×90,5 Incopisos',brand:'Incopisos',type:'Piso cerâmico',category:'revestimentos',price:34.90,image:productImages+'6/6/660a9e0e_2118390_1.jpg'},
+{id:'2031675',name:'Porcelanato York Soft Gray Hard Retificado Externo 120×120 Portinari',brand:'Portinari',type:'Porcelanato',category:'revestimentos',price:139.90,image:productImages+'c/8/c85f1ffc_2031675_1_1.jpg'},
+{id:'1984729',name:'Piso Vinílico Click Nobre Castanha 1,22×18,2 Málaga',brand:'Málaga',type:'Piso vinílico',category:'revestimentos',price:129.90,image:productImages+'a/c/ac2cfb03_1984729_4.jpg'},
+{id:'1984736',name:'Piso Vinílico SPC Click Nobre Jatobá 18×122 Málaga',brand:'Málaga',type:'Piso vinílico',category:'revestimentos',price:159.90,image:productImages+'3/3/332f8cbd_1984736_1.jpg'},
+{id:'2118383',name:'Piso Cerâmico Unique Gris Cimento Retificado Acetinado 90,5×90,5 Incopisos',brand:'Incopisos',type:'Piso cerâmico',category:'revestimentos',price:39.90,image:productImages+'5/9/5971e55e_2118383_1.jpg'},
+{id:'2087061',name:'Porcelanato Quartzo Cimento Retificado Acetinado 84×84 Eliane',brand:'Eliane',type:'Porcelanato',category:'revestimentos',price:71.90,image:productImages+'0/4/047854aa_2087061_1.jpg'},
+{id:'937559',name:'Revestimento de Parede Filetado Branco Retificado Acetinado Ceusa',brand:'Ceusa',type:'Revestimento de parede',category:'revestimentos',price:97.90,image:productImages+'f/f/ff39c93a_937559_1.jpg'},
+{id:'2128429',name:'Revestimento de Parede Branco Acetinado Charm Retificado Ilhabella',brand:'Ilhabella',type:'Revestimento de parede',category:'revestimentos',price:27.90,image:productImages+'a/4/a42e2f0d_2128429_1.jpg'},
+{id:'1883374',name:'Piso Laminado Click Prime Cacau 21,7×135,7 Eucafloor',brand:'Eucafloor',type:'Piso laminado',category:'revestimentos',price:79.90,image:productImages+'8/6/86aab1e1_1883374_1.jpg'},
+{id:'1885330',name:'Porcelanato Urban Off White HD Retificado Acetinado 84×84 Elizabeth',brand:'Elizabeth',type:'Porcelanato',category:'revestimentos',price:67.90,image:productImages+'1/8/1885330_1.jpg'},
+{id:'2115344',name:'Piso Vinílico Cola Basic Santiago Madeirado Bege Eucafloor',brand:'Eucafloor',type:'Piso vinílico',category:'revestimentos',price:69.90,image:productImages+'0/e/0ee7be60_2115344_1.jpg'},
+{id:'2118291',name:'Piso Cerâmico Urban Silver Retificado Acetinado 75,5×75,5 Incopisos',brand:'Incopisos',type:'Piso cerâmico',category:'revestimentos',price:29.90,image:productImages+'7/c/7cb243ca_2118291_1.jpg'},
+{id:'1938760',name:'Piso Laminado Click Fit Urucum 3003 21,5×120 Floorest',brand:'Floorest',type:'Piso laminado',category:'revestimentos',price:76.90,image:productImages+'8/b/8b92bed7_1938760_1.jpg'},
+{id:'2089959',name:'Piso Vinílico Autoadesivo Veneza 15,2×91,44 Málaga',brand:'Málaga',type:'Piso vinílico',category:'revestimentos',price:63.90,image:productImages+'4/2/42f8ab18_2089959_1.jpg'},
+{id:'2118598',name:'Piso Laminado Click Spot Dian Carvalho 18,7×134 Durafloor',brand:'Durafloor',type:'Piso laminado',category:'revestimentos',price:79.90,image:productImages+'3/1/31c8bf39_2118598_1.jpg'},
 {id:'REF-001',name:'Janela pantográfica de eucalipto',brand:'Reforme / Aberturas',type:'Janela',category:'construcao',price:699,image:'/assets/window-eucalyptus.webp'},
 {id:'REF-002',name:'Cimento Votoran Todas as Obras 50 kg',brand:'Votoran',type:'Cimento',category:'construcao',price:55.90,image:'https://balaroti.fbitsstatic.net/img/p/cimento-votoran-todas-as-obras-50kg-154494/341017.jpg?h=704&v=202509011440&w=704'},
 {id:'REF-003',name:'Prego Real 17×27',brand:'Real',type:'Fixação',category:'construcao',price:13.90,image:'https://www.cassol.com.br/media/catalog/product/cache/ae23a9b10c9c149bebc298aa7ed9024c/b/6/b60540d8_1297157_3_1.jpg'},
@@ -111,7 +111,7 @@ function render(){
  document.getElementById('page-title').textContent=category==='revestimentos'?'Pisos e revestimentos':categories[category];
  document.getElementById('crumb-current').textContent=categories[category];document.getElementById('results-count').textContent=shown.length+' '+(shown.length===1?'produto':'produtos')+' encontrados';
  document.querySelectorAll('.material-link').forEach(el=>el.classList.toggle('active',el.dataset.category===category));
- grid.innerHTML=shown.length?shown.map(p=>{const img=p.image||'';const price=p.price===null?'<strong style="font-size:16px">Sob consulta</strong>':'<small>R$</small><strong>'+Math.floor(p.price).toLocaleString('pt-BR')+'</strong><sup>,'+String(Math.round((p.price%1)*100)).padStart(2,'0')+'</sup>';return '<article class="product"><div class="image-wrap"><img src="'+img+'" alt="'+p.name.replace(/"/g,'&quot;')+'" loading="lazy" onerror="this.style.display=\'none\'"><span class="badge">'+p.brand+'</span></div><div class="product-body"><p class="sku">Cód. '+p.id+'</p><h3>'+p.name+'</h3><p class="brand-name">'+p.type+'</p><div class="price">'+price+'</div><p class="unit">'+(p.price===null?'Consulte condições com a equipe':'Preço por unidade de venda')+'</p><button class="add" type="button" data-id="'+p.id+'" aria-pressed="'+readCart().some(i=>i.id===p.id)+'">'+(readCart().some(i=>i.id===p.id)?'Na minha lista':'Adicionar à lista')+' <span>'+(readCart().some(i=>i.id===p.id)?'✓':'+')+'</span></button></div></article>'}).join(''):'<div class="empty">Não encontramos materiais com esses filtros.</div>';
+ grid.innerHTML=shown.length?shown.map(p=>{const img=p.image||'';const price=p.price===null?'<strong style="font-size:16px">Sob consulta</strong>':'<small>R$</small><strong>'+Math.floor(p.price).toLocaleString('pt-BR')+'</strong><sup>,'+String(Math.round((p.price%1)*100)).padStart(2,'0')+'</sup>';return '<article class="product"><div class="image-wrap"><img src="'+img+'" alt="'+p.name.replace(/"/g,'&quot;')+'" loading="lazy" onerror="this.style.display=\'none\'"><span class="badge">'+p.brand+'</span></div><div class="product-body"><h3>'+p.name+'</h3><p class="brand-name">'+p.type+'</p><div class="price">'+price+'</div><p class="unit">'+(p.price===null?'Consulte condições com a equipe':'Preço por unidade de venda')+'</p><button class="add" type="button" data-id="'+p.id+'" aria-pressed="'+readCart().some(i=>i.id===p.id)+'">'+(readCart().some(i=>i.id===p.id)?'Na minha lista':'Adicionar à lista')+' <span>'+(readCart().some(i=>i.id===p.id)?'✓':'+')+'</span></button></div></article>'}).join(''):'<div class="empty">Não encontramos materiais com esses filtros.</div>';
  updateSummary();
 }
 function updateSummary(){

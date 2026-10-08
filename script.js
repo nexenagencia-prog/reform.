@@ -77,19 +77,16 @@ function makeElement(tag, className, text) {
   if (text !== undefined) element.textContent = text;
   return element;
 }
-function getCassolCode(image) {
-  const match = image.match(/(?:^|_)(\d{5,})_\d+(?:_\d+)?\.jpg/i) || image.match(/\/(\d{5,})_1\.jpg/i);
-  return match ? match[1] : '';
-}
 function renderProduct(item) {
   const card = makeElement('article', 'product-card reveal');
   card.dataset.category = item.category;
   const photo = makeElement('div', 'product-image');
   const imageLink = makeElement('a', 'product-image-link');
-  imageLink.href = item.url;
+  const inquiryUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent('Olá, Reforme! Quero consultar o produto ' + item.name + ' por ' + money(item.price) + '.');
+  imageLink.href = inquiryUrl;
   imageLink.target = '_blank';
   imageLink.rel = 'noopener noreferrer';
-  imageLink.setAttribute('aria-label', 'Ver ' + item.name + ' na Cassol (abre em nova aba)');
+  imageLink.setAttribute('aria-label', 'Consultar ' + item.name + ' com a Reforme (abre em nova aba)');
   const image = document.createElement('img');
   image.src = item.image;
   image.alt = item.name;
@@ -98,8 +95,8 @@ function renderProduct(item) {
   imageLink.append(image);
   photo.append(imageLink);
   photo.append(makeElement('span', 'product-category', categoryNames[item.category] || 'MATERIAL'));
-  const visit = makeElement('a', 'product-visit', 'Ver na Cassol ↗');
-  visit.href = item.url;
+  const visit = makeElement('a', 'product-visit', 'Consultar com a Reforme ↗');
+  visit.href = inquiryUrl;
   visit.target = '_blank';
   visit.rel = 'noopener noreferrer';
   photo.append(visit);
@@ -112,14 +109,12 @@ function renderProduct(item) {
   photo.append(add);
   card.append(photo);
   const info = makeElement('div', 'product-info');
-  info.append(makeElement('p', 'product-brand', 'CASSOL / ' + (categoryNames[item.category] || 'MATERIAL')));
+  info.append(makeElement('p', 'product-brand', 'REFORME / ' + (categoryNames[item.category] || 'MATERIAL')));
   const title = makeElement('h3', '', item.name);
   info.append(title);
   const price = makeElement('div', 'product-price');
   price.append(makeElement('strong', '', money(item.price)));
   info.append(price);
-  const code = getCassolCode(item.image);
-  if (code) info.append(makeElement('p', 'product-code', 'Cód. Cassol ' + code));
   card.append(info);
   return card;
 }

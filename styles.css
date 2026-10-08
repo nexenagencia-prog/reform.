@@ -402,3 +402,42 @@ h1,h2,h3,p{margin-top:0}
   .hero-material-card img{width:27px;height:34px}
   .hero-material-card strong,.hero-material-card em{font-size:7px}
 }
+
+
+/* Hero mobile em proporção de stories, com áreas livres para títulos e ofertas */
+.hero-title-group,.hero-details-group{display:contents}
+@media(max-width:640px){
+  .hero{height:max(820px,100svh);min-height:820px;max-height:none;padding:0 20px;display:block}
+  .hero-store-photo{inset:0;height:100%;background-image:url('/assets/hero-company-team-mobile.webp');background-color:#151512;background-size:100% auto;background-position:center top;background-repeat:no-repeat;opacity:1;-webkit-mask-image:none;mask-image:none}
+  .hero-overlay{background:linear-gradient(180deg,rgba(16,16,14,.12) 0%,rgba(16,16,14,.04) 32%,rgba(16,16,14,.12) 62%,rgba(16,16,14,.55) 100%)}
+  .hero-content{position:absolute;top:86px;right:20px;bottom:158px;left:20px;width:auto;max-width:none;margin:0;z-index:6}
+  .hero-title-group,.hero-details-group{display:block;position:absolute;left:0;right:0}
+  .hero-title-group{top:0}
+  .hero .eyebrow{max-width:270px;margin-bottom:9px;font-size:8px;letter-spacing:.13em}
+  .hero h1{font-size:clamp(54px,14.5vw,66px);line-height:.9}
+  .hero-details-group{bottom:0}
+  .hero-copy{max-width:270px;margin:0 0 13px;font-size:11px;line-height:1.55;color:rgba(255,255,255,.86)}
+  .hero-actions{display:flex;flex-direction:row;align-items:center;gap:12px;margin:0}
+  .hero-actions .button{min-height:44px;padding-inline:13px;font-size:8px;gap:10px}
+  .hero-actions .text-link{font-size:8px;white-space:nowrap}
+  .hero-installment{display:block;position:static;max-width:270px;margin:16px 0 0;font-size:16px;line-height:1.2;text-align:left}
+  .hero-side-note,.hero-photo-caption{display:none}
+  .hero-material-cards{right:14px;bottom:24px;left:14px;justify-content:stretch;gap:5px}
+  .hero-material-card{width:calc((100vw - 38px)/3);min-height:66px;padding:5px;gap:4px}
+  .hero-material-card img{width:30px;height:36px}
+  .hero-material-card small{font-size:5px;letter-spacing:.025em}
+  .hero-material-card strong,.hero-material-card em{font-size:7.5px}
+  .hero-material-card>b{font-size:10px}
+}
+@media(max-width:380px){
+  .hero{min-height:800px}
+  .hero-content{top:82px;bottom:158px}
+  .hero h1{font-size:54px}
+  .hero-actions{gap:8px}
+  .hero-actions .button{padding-inline:11px;font-size:7.5px}
+  .hero-actions .text-link{font-size:7.5px}
+  .hero-material-cards{right:10px;left:10px;gap:4px}
+  .hero-material-card{width:calc((100vw - 28px)/3);gap:3px;padding:4px}
+  .hero-material-card img{width:27px;height:34px}
+  .hero-material-card strong,.hero-material-card em{font-size:7px}
+}

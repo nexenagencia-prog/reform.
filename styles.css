@@ -596,3 +596,39 @@ h1,h2,h3,p{margin-top:0}
  .materials-view-heading h1{font-size:clamp(48px,14vw,70px)}
  .materials-view-heading>p{margin-top:14px;font-size:12px}
 }
+
+
+/* Refinos mobile pedidos para a hero, cartão e cards de materiais */
+.category-tools{background:#050505;color:#fff}
+.category-tools .category-photo{background:#050505;mix-blend-mode:multiply}
+.category-tools:before{background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.42))}
+@media(max-width:640px){
+  .hero-store-photo{top:0;right:0;bottom:0;left:0;width:100%;height:100%;background-size:cover;background-position:center center;background-color:#151512;-webkit-mask-image:none;mask-image:none}
+  .hero-overlay{background:linear-gradient(180deg,rgba(16,16,14,.34) 0%,rgba(16,16,14,.12) 40%,rgba(16,16,14,.2) 65%,rgba(16,16,14,.68) 100%)}
+  .hero-content{top:72px;right:20px;bottom:158px;left:20px}
+  .hero-title-group{top:18px;left:0;right:0;display:flex;flex-direction:column;align-items:center;text-align:center}
+  .hero .eyebrow{justify-content:center;margin-inline:auto;text-align:center}
+  .hero h1{text-align:center}
+  .hero-details-group{right:0;bottom:0;left:0;text-align:left}
+  .hero-material-cards{right:10px;bottom:36px;left:10px;justify-content:center;gap:5px}
+  .category-grid{grid-template-columns:minmax(0,1fr);grid-auto-rows:minmax(220px,auto);align-items:stretch;gap:14px}
+  .category-grid .category-card{grid-column:1;grid-row:auto;min-width:0;margin:0}
+  .category-grid .category-large{grid-row:auto;min-height:330px}
+  .category-grid .category-tools{min-height:220px;background:#050505}
+  .card-promo{height:auto;min-height:clamp(640px,170vw,780px);display:flex;align-items:flex-end;justify-content:flex-start;padding:0;isolation:isolate;background:#151512}
+  .card-promo-photo{position:absolute;z-index:-2;inset:0;width:100%;height:100%;max-width:none;aspect-ratio:auto;object-fit:cover;object-position:64% center;opacity:1}
+  .card-promo-shade{display:block;position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,rgba(21,21,18,.08) 8%,rgba(21,21,18,.04) 38%,rgba(21,21,18,.44) 62%,rgba(21,21,18,.94) 100%)}
+  .card-promo-copy{width:100%;max-width:none;margin:0;padding:0 22px 40px;background:transparent}
+  .promo-card-mark{display:grid;left:48%;top:50%;width:26%;height:8%}
+  .promo-card-mark .brand-logo{display:block;width:100%}
+  .promo-card-mark .brand-logo img{display:block;width:100%;height:auto;mix-blend-mode:screen}
+  .promo-card-mark .brand-logo-dot{display:block}
+}
+@media(max-width:380px){
+  .hero-content{top:68px;bottom:158px}
+  .hero-title-group{top:12px}
+  .hero-material-cards{right:8px;bottom:31px;left:8px;gap:4px}
+  .hero-material-card{width:calc((100vw - 24px)/3)}
+  .category-grid{grid-auto-rows:minmax(200px,auto);gap:12px}
+  .category-grid .category-large{min-height:300px}
+}

@@ -198,6 +198,10 @@ fetch('/products.json')
       const promotionCategories = ['revestimentos','construcao','tintas','banheiro','cozinha','ferramentas'];
       const promotions = promotionCategories.map((category) => items.find((item) => item.category === category)).filter(Boolean);
       promotionGrid.replaceChildren(...promotions.map(renderProduct));
+      promotionGrid.querySelectorAll('.product-card').forEach((card) => {
+        if (revealObserver) revealObserver.observe(card);
+        else card.classList.add('is-visible');
+      });
     }
     productCards = [...productGrid.querySelectorAll('.product-card')];
     productCards.forEach((item) => {

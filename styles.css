@@ -647,3 +647,29 @@ h1,h2,h3,p{margin-top:0}
   .hero-details-group{bottom:16px}
   .hero-material-cards{right:8px;bottom:50px;left:8px}
 }
+
+
+/* Mobile hero: lower the photo, place the installment line above the offer cards */
+@media(max-width:640px){
+  .hero-store-photo{
+    top:-7%;right:0;bottom:-3%;left:0;width:100%;height:auto;
+    transform:translateY(5%);
+    background-size:cover;background-position:center 42%;
+  }
+  .hero-title-group .eyebrow{margin-top:12px}
+  .hero .eyebrow-line{display:none}
+  .hero-details-group{bottom:18px}
+  .hero-installment{
+    position:absolute;right:0;bottom:-46px;left:0;
+    width:auto;max-width:none;margin:0;
+    font-size:clamp(14px,4vw,16px);line-height:1.15;text-align:center;
+  }
+  .hero-material-cards{bottom:52px}
+}
+@media(max-width:380px){
+  .hero-store-photo{top:-6%;bottom:-2%;transform:translateY(4%);background-position:center 42%}
+  .hero-title-group .eyebrow{margin-top:10px}
+  .hero-details-group{bottom:16px}
+  .hero-installment{bottom:-38px;font-size:14px}
+  .hero-material-cards{bottom:50px}
+}

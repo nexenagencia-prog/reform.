@@ -857,3 +857,37 @@ h1,h2,h3,p{margin-top:0}
   .hero-material-cards{bottom:172px}
   .hero-installment{bottom:116px}
 }
+
+
+/* Mobile hero correction from screenshot: keep the header clear and stack content at the bottom */
+@media(max-width:640px){
+  .hero{height:auto;min-height:0;max-height:none;aspect-ratio:9/16;padding:0 18px;display:block;overflow:hidden}
+  .hero-content{position:static;top:auto;right:auto;bottom:auto;left:auto;width:auto;max-width:none;margin:0;z-index:auto}
+  .hero-title-group{
+    position:absolute;z-index:12;top:38%;right:18px;left:18px;
+    display:block;text-align:center
+  }
+  .hero-title-group .eyebrow{display:none}
+  .hero h1{font-size:clamp(39px,11.2vw,46px);line-height:.95;text-align:center}
+  .hero-details-group{
+    position:absolute;z-index:12;right:18px;bottom:10px;left:18px;
+    display:flex;flex-direction:column;align-items:center;text-align:center
+  }
+  .hero-copy{max-width:310px;margin:0 auto 8px;font-size:11px;line-height:1.35;text-align:center}
+  .hero-actions{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;justify-content:center;gap:8px;margin:0}
+  .hero-actions .button{width:auto;min-height:42px;padding-inline:10px;font-size:7px;gap:7px}
+  .hero-actions .text-link{min-height:38px;font-size:7px;white-space:nowrap}
+  .hero-material-cards{z-index:13;right:10px;bottom:176px;left:10px;justify-content:center;gap:5px}
+  .hero-installment{z-index:13;right:16px;bottom:108px;left:16px;width:auto;max-width:none;font-size:clamp(17px,5.25vw,21px);line-height:1.16;text-align:center}
+  .hero-overlay{background:linear-gradient(180deg,rgba(16,16,14,.76) 0%,rgba(16,16,14,.45) 15%,rgba(16,16,14,.08) 34%,rgba(16,16,14,.06) 58%,rgba(16,16,14,.34) 76%,rgba(16,16,14,.88) 100%)}
+}
+@media(max-width:380px){
+  .hero-title-group{top:33%}
+  .hero-material-cards{right:8px;bottom:164px;left:8px;gap:4px}
+  .hero-installment{bottom:108px;font-size:17px}
+  .hero-details-group{right:14px;bottom:8px;left:14px}
+  .hero-copy{font-size:10.5px}
+  .hero-actions{gap:6px}
+  .hero-actions .button{padding-inline:8px;font-size:6.8px}
+  .hero-actions .text-link{font-size:6.8px}
+}

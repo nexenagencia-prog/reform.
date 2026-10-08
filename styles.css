@@ -746,3 +746,61 @@ h1,h2,h3,p{margin-top:0}
   .hero-installment{bottom:128px;font-size:15px}
   .hero-material-cards{right:8px;bottom:48px;left:8px;gap:4px}
 }
+
+
+/* Hero final fix: desktop installment stays in its original corner; mobile content has a clear vertical order */
+.hero-installment{
+  position:absolute;
+  z-index:7;
+  right:max(5vw,28px);
+  bottom:157px;
+  left:auto;
+  width:auto;
+  max-width:360px;
+  margin:0;
+  font-size:clamp(13px,1.15vw,16px);
+  line-height:1.35;
+  text-align:right;
+}
+.hero-installment strong{font-weight:700}
+@media(max-width:640px){
+  .hero{height:max(900px,112svh);min-height:900px;max-height:none;aspect-ratio:auto;padding:0 20px;display:block;overflow:hidden}
+  .hero-store-photo{
+    top:205px;right:0;bottom:205px;left:0;width:100%;height:auto;transform:none;
+    background-image:url('/assets/hero-company-team-mobile.webp');background-color:#151512;
+    background-size:100% auto;background-position:center top;background-repeat:no-repeat;opacity:1;
+    -webkit-mask-image:none;mask-image:none
+  }
+  .hero-overlay{background:linear-gradient(180deg,rgba(16,16,14,.68) 0%,rgba(16,16,14,.36) 22%,rgba(16,16,14,.08) 48%,rgba(16,16,14,.2) 68%,rgba(16,16,14,.82) 100%)}
+  .hero-content{position:absolute;top:0;right:20px;bottom:0;left:20px;display:block;width:auto;max-width:none;margin:0;z-index:8}
+  .hero-title-group{position:absolute;top:82px;right:0;left:0;display:block;text-align:center}
+  .hero-details-group{position:absolute;right:0;bottom:18px;left:0;display:flex;flex-direction:column;align-items:center;text-align:center}
+  .hero-title-group .eyebrow{display:block;max-width:none;margin:0 auto 10px;font-size:8px;line-height:1.4;letter-spacing:.13em;text-align:center}
+  .hero .eyebrow-line{display:none}
+  .hero h1{font-size:clamp(42px,12vw,54px);line-height:.94;text-align:center}
+  .hero-copy{max-width:310px;margin:0 auto 14px;color:rgba(255,255,255,.94);font-size:12px;line-height:1.5;text-align:center}
+  .hero-actions{display:flex;flex-direction:row;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin:0}
+  .hero-actions .button{width:auto;min-height:45px;padding-inline:13px;font-size:8px;gap:9px}
+  .hero-actions .text-link{min-height:38px;font-size:8px;white-space:nowrap}
+  .hero-installment{right:16px;bottom:156px;left:16px;width:auto;max-width:none;font-size:clamp(14px,4vw,16px);line-height:1.25;text-align:center}
+  .hero-material-cards{z-index:9;right:10px;bottom:220px;left:10px;justify-content:center;gap:5px}
+  .hero-material-card{width:calc((100vw - 38px)/3);min-height:66px;padding:5px;gap:4px}
+  .hero-material-card img{width:29px;height:35px}
+  .hero-material-card small{font-size:5px;letter-spacing:.025em}
+  .hero-material-card strong,.hero-material-card em{font-size:7.5px}
+  .hero-material-card>b{font-size:10px}
+  .hero-side-note,.hero-photo-caption{display:none}
+}
+@media(max-width:380px){
+  .hero{height:900px;min-height:900px}
+  .hero-store-photo{top:198px;bottom:205px}
+  .hero-content{right:17px;left:17px}
+  .hero-title-group{top:78px}
+  .hero h1{font-size:42px}
+  .hero-details-group{bottom:18px}
+  .hero-installment{bottom:156px;font-size:14px}
+  .hero-material-cards{right:8px;bottom:220px;left:8px;gap:4px}
+  .hero-material-card{width:calc((100vw - 28px)/3);gap:3px;padding:4px}
+  .hero-material-card img{width:26px;height:32px}
+  .hero-material-card strong,.hero-material-card em{font-size:7px}
+}

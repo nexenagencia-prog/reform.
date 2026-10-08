@@ -1118,5 +1118,355 @@
     "price": 1290,
     "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/d/8/d8a74369_153072_1.jpg",
     "url": "https://www.cassol.com.br/broca-para-concreto-7x100mm-irwin-/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira Parafusadeira PFV120 12V Bivolt 3/8\" Vonder",
+    "price": 19990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/5/b/5bf10575_1948424_1_3.jpg",
+    "url": "https://www.cassol.com.br/furadeira-parafusadeira-pfv120-12v-bivolt-3x8polegadas-vonder/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira Parafusadeira com Maleta Laranja Bivolt 12v 3/8\" Brico Forte",
+    "price": 9291,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/c/5/c55db2e6_2090177_1_3.jpg",
+    "url": "https://www.cassol.com.br/furadeira-parafusadeira-com-maleta-laranja-bivolt-12v-3x8polegadas-brico-forte-/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Serra Mármore SMV1300 1300W 4.3/8\" Vonder",
+    "price": 32990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/e/6/e6e83f66_1506440_1.jpg",
+    "url": "https://www.cassol.com.br/serra-marmore-smv1300-1300w-43x8polegadas-vonder/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Serra Mármore Discos com Maleta 1500W Azul Bosch",
+    "price": 45990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/3/c/3cf38252_2029986_1.jpg",
+    "url": "https://www.cassol.com.br/serra-marmore-discos-com-maleta-1500w-azul-bosch-/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira Parafusadeira PFV012 Bateria 12V Bivolt 3/8\" Vonder",
+    "price": 25990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/1/2/125d7865_1506532_1.jpg",
+    "url": "https://www.cassol.com.br/furadeira-parafusadeira-pfv012-bateria-12v-bivolt-3x8polegadas-vonder/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Serra Circular GKS 150 1500W com 1 Disco e Guia 7.1/4'' Bosch",
+    "price": 84990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/1/0/10be1f74_1553260_1.jpg",
+    "url": "https://www.cassol.com.br/serra-circular-gks-150-1500w-com-1-disco-e-guia-71x4--bosch/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira Parafusadeira GSR 1000 Bateria 12V Bivolt 1/4\" com Maleta Bosch",
+    "price": 39990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/f/2/f2f87374_1241082_1.jpg",
+    "url": "https://www.cassol.com.br/furadeira-parafusadeira-gsr-1000-bateria-12v-bivolt-1x4polegadas-com-maleta-bosch/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Martelete Perfurador Rompedor GBH 2-24 D 820W com 7 Acessórios e Maleta Bosch",
+    "price": 98990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/6/4/64b5c671_1946659_1.jpg",
+    "url": "https://www.cassol.com.br/martelete-perfurador-rompedor-gbh-2-24-d-820w-com-7-acessorios-e-maleta-bosch/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira Parafusadeira Impacto 18v Gsb 185-li com Maleta 1 Bateria Azul Bivolt Bosch",
+    "price": 89990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/5/1/51fc3736_2028569_1.jpg",
+    "url": "https://www.cassol.com.br/furadeira-parafusadeira-impacto-18v-gsb-185-li-com-maleta-1-bateria-azul-bivolt-bosch/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira de Impacto GSB 13 RE com Maleta Azul 750W Bosch",
+    "price": 53990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/c/2/c2e090a6_2029962_1.jpg",
+    "url": "https://www.cassol.com.br/furadeira-de-impacto-gsb-13-re-com-maleta-azul-750w-bosch/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Martelete Perfurador MPV832 800W Amarelo e Preto Vonder",
+    "price": 62990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/a/d/ad8c2fd3_1949414_1.jpg",
+    "url": "https://www.cassol.com.br/martelete-perfurador-mpv832-800w-amarelo-e-preto-vonder/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Serra Mármore 4100NH3ZX2 1300W com 2 Discos 4.3/8\" Makita",
+    "price": 39990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/4/e/4e4fdecc_1400021_1.jpg",
+    "url": "https://www.cassol.com.br/serra-marmore-4100nh3zx2-1300w-com-2-discos-43x8polegadas-makita/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Nível a Laser 15m Nivelox Vermelho Bosch",
+    "price": 69990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/8/a/8a107a59_1909517_1.jpg",
+    "url": "https://www.cassol.com.br/nivel-a-laser-15m-nivelox-vermelho-bosch-/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira Parafusadeira com Martelete 12v 3/8\" Laranja Bivolt com Maleta Brico Forte",
+    "price": 13990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/e/e/ee2ad457_2090184_1_3.jpg",
+    "url": "https://www.cassol.com.br/furadeira-parafusadeira-com-martelete-12v-3x8polegadas-laranja-bivolt-com-maleta-brico-forte/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira Parafusadeira Impacto à bateria PFV120I Bivolt 3/8\" Vonder",
+    "price": 23490,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/2/b/2b0a63c4_1948417_1.jpg",
+    "url": "https://www.cassol.com.br/furadeira-parafusadeira-impacto-a-bateria-pfv120i-bivolt-3x8polegadas-vonder/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Esmerilhadeira Angular GWS 850 850W com 3 discos Maleta Bosch",
+    "price": 49990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/7/5/75c229ea_1660432_1.jpg",
+    "url": "https://www.cassol.com.br/esmerilhadeira-angular-gws-850-850w-com-3-discos-maleta-bosch-/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Esmerilhadeira Angular EAV860 860W 4.1/2\" Vonder",
+    "price": 41490,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/4/6/466fa797_1506327_1.jpg",
+    "url": "https://www.cassol.com.br/esmerilhadeira-angular-eav860-860w-41x2polegadas-vonder/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Furadeira Parafusadeira Bateria 12V PFV 074 Bivolt com Maleta Vonder",
+    "price": 39990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/7/d/7df7a8b7_1694116_1.jpg",
+    "url": "https://www.cassol.com.br/furadeira-parafusadeira-bateria-12v-pfv-074-bivolt-com-maleta-vonder-/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Martelo 27mm Cabo Fibra Brico Forte",
+    "price": 5990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/3/f/3f5e43c3_2068275_1.jpg",
+    "url": "https://www.cassol.com.br/martelo-27mm-cabo-fibra-brico-forte/p"
+  },
+  {
+    "category": "ferramentas",
+    "name": "Alicate 8\" Universal Aço Brico Forte",
+    "price": 3290,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/2/0/2068206_1.jpg",
+    "url": "https://www.cassol.com.br/alicate-8polegadas-universal-aco-brico-forte/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Novopiso Premium Cinza Chumbo Fosco 18L Hydronorth",
+    "price": 30681,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/2/3/23ec3acb_1969733_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-novopiso-premium-cinza-chumbo-fosco-18l-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Granffino Revestimento Pedras Naturais Cinza Escuro 20kg Hydronorth",
+    "price": 28821,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/6/d/6d78ea95_2131122_1.jpg",
+    "url": "https://www.cassol.com.br/granffino-revestimento-pedras-naturais-cinza-escuro-20kg-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Resina Acqua Multiuso Incolor Fosco 3,6l Hydronorth",
+    "price": 9291,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/8/4/84f1b59f_2131085_1.jpg",
+    "url": "https://www.cassol.com.br/resina-acqua-multiuso-incolor-fosco-3-6l-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Textura Acrílica Renner Ardonare Lisa Premium 18L Branco Fosco",
+    "price": 26031,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/f/c/fc6c47cf_191159_1.jpg",
+    "url": "https://www.cassol.com.br/textura-acrilica-renner-ardonare-lisa-premium-18l-branco-fosco/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Acrílica Sherwin Williams Novacor Gesso & Drywall Standard 18L Branco Fosco",
+    "price": 22311,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/6/0/604dcf38_1259438_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-acrilica-sherwin-williams-novacor-gesso---drywall-standard-18l-branco-fosco/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Textura Acrílica Renner Ardonare Rústica Premium 14L Branco Fosco",
+    "price": 26031,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/1/9/19253d4a_891493_1.jpg",
+    "url": "https://www.cassol.com.br/textura-acrilica-renner-ardonare-rustica-premium-14l-branco-fosco/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Resina Acqua Incolor Fosco 18l Hydronorth",
+    "price": 42771,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/8/1/81fe698a_2131092_1.jpg",
+    "url": "https://www.cassol.com.br/resina-acqua-incolor-fosco-18l-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta 3,6L Novopiso Grafite Fosco Hydronorth",
+    "price": 7896,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/d/c/dc92ceb1_1989120_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-3-6l-novopiso-grafite-fosco-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Novopiso Premium 18L Grafite Fosco Hydronorth",
+    "price": 33936,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/2/3/23ec3acb_1969702_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-novopiso-premium-18l-grafite-fosco-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Sherwin Williams Metalatex 3,6L Vermelho Óxido Brilhante",
+    "price": 8826,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/9/0/90a523c6_1781090_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-sherwin-williams-metalatex-3-6l-vermelho-oxido-brilhante/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Resina Hidrorepelente Montana 1L Koromix Incolor",
+    "price": 4362,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/7/7/77788f73_1407044_1.jpg",
+    "url": "https://www.cassol.com.br/resina-hidrorepelente-montana-1l-koromix-incolor/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Novopiso 3,6L Premium Cinza Chumbo Fosco Hydronorth",
+    "price": 8175,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/4/3/435bf3be_1969672_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-novopiso-3-6l-premium-cinza-chumbo-fosco-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Impermeabilizante 4,5kg Manta Líquida Branco Hydronorth",
+    "price": 6873,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/b/1/b1587c39_2144962_1.jpg",
+    "url": "https://www.cassol.com.br/impermeabilizante-4-5kg-manta-liquida-branco-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Textura Acrílica Renner Ardonare Rústica Premium 4,8kg Branco Fosco",
+    "price": 7338,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/3/9/39158729_891523_1.jpg",
+    "url": "https://www.cassol.com.br/textura-acrilica-renner-ardonare-rustica-premium-4-8kg-branco-fosco/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Novopiso 3,6L Premium Fosco Branco Hydronorth",
+    "price": 7896,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/4/3/435bf3be_1969689_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-novopiso-3-6l-premium-fosco-branco-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Resina Acqua Fosca Incolor Fosco 900ml Hydronorth",
+    "price": 3060,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/5/7/570ebb62_2131078_1.jpg",
+    "url": "https://www.cassol.com.br/resina-acqua-fosca-incolor-fosco-900ml-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Renner Esmalte Dulit Standard 3,6L Branco Brilhante",
+    "price": 15336,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/c/2/c2b8f3b7_1480610_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-renner-esmalte-dulit-standard-3-6l-branco-brilhante/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Extra Premium Brilhante 3,6L Branco Renner",
+    "price": 15336,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/3/c/3c8ca714_15325_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-extra-premium-brilhante-3-6l-branco-renner/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Extra Premium Brilhante 3,6L Preto Renner",
+    "price": 15801,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/3/c/3c8ca714_65672_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-extra-premium-brilhante-3-6l-preto-renner/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Sherwin Williams Novacor Esmalte Sintético Standard 900ml Branco Gelo Brilhante",
+    "price": 2130,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/2/b/2be6b408_1259889_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-sherwin-williams-novacor-esmalte-sintetico-standard-900ml-branco-gelo-brilhante/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Renner Esmalte Dulit Standard 900ml Branco Brilhante",
+    "price": 5106,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/6/8/68b81ee6_1480627_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-renner-esmalte-dulit-standard-900ml-branco-brilhante/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Branco Neve 900ml Hydronorth",
+    "price": 2781,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/a/9/a9affb6e_2145037_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-branco-neve-900ml-hydronorth/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Grafite Cinza Fosco 3,6L Coral",
+    "price": 21990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/9/3/93033fc6_2206301_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-grafite-cinza-fosco-36l-coral/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Hammerite Cinza 800ml Coral",
+    "price": 9490,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/2/1/211b8d9a_2206240_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-hammerite-cinza-800ml-coral/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Hammerite Preto 2,4L Coral",
+    "price": 23990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/d/b/db856a92_2206271_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-hammerite-preto-24l-coral/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Grafite Cinza Escuro Fosco 900ml Coral",
+    "price": 6290,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/6/1/61961574_2206202_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-grafite-cinza-escuro-fosco-900ml-coral/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Hammerite Branco 800ml Coral",
+    "price": 9490,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/2/1/211b8d9a_2206226_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-hammerite-branco-800ml-coral/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Grafite Cinza Fosco 900ml Coral",
+    "price": 6290,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/6/1/61961574_2206295_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-grafite-cinza-fosco-900ml-coral/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Grafite Cinza Escuro Fosco 3,6L Coral",
+    "price": 21990,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/9/3/93033fc6_2206196_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-grafite-cinza-escuro-fosco-36l-coral/p"
+  },
+  {
+    "category": "tintas",
+    "name": "Tinta Esmalte Hammerite Preto 800ml Coral",
+    "price": 9490,
+    "image": "https://www.cassol.com.br/media/catalog/product/cache/bbf09ac06680f22ee61c72c4cb1defae/2/1/211b8d9a_2206288_1.jpg",
+    "url": "https://www.cassol.com.br/tinta-esmalte-hammerite-preto-800ml-coral/p"
   }
 ]

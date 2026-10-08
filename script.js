@@ -163,7 +163,7 @@ fetch('/products.json')
     return response.json();
   })
   .then((items) => {
-    if (!Array.isArray(items) || items.length !== 160) throw new Error('O catálogo precisa conter 160 produtos.');
+    if (!Array.isArray(items) || items.length !== 210) throw new Error('O catálogo precisa conter 210 produtos.');
     productGrid.replaceChildren(...items.map(renderProduct));
     productCards = [...productGrid.querySelectorAll('.product-card')];
     productCards.forEach((item) => {

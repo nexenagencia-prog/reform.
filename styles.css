@@ -891,3 +891,11 @@ h1,h2,h3,p{margin-top:0}
   .hero-actions .button{padding-inline:8px;font-size:6.8px}
   .hero-actions .text-link{font-size:6.8px}
 }
+
+
+/* Mobile headline directly under the navigation, clear of the team photo */
+@media(max-width:640px){
+  .site-header .brand{width:102px;flex:none}
+  .hero-title-group{top:94px}
+  .hero h1{font-size:clamp(43px,12.3vw,50px);line-height:.95}
+}

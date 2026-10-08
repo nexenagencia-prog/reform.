@@ -701,3 +701,48 @@ h1,h2,h3,p{margin-top:0}
   .hero-details-group{bottom:0}
   .hero-installment{bottom:128px;font-size:15px}
 }
+
+
+/* Mobile hero layout: reserve the header, stack the copy, then separate financing and cards */
+@media(max-width:640px){
+  .site-header{z-index:30}
+  .hero{position:relative;overflow:hidden}
+  .hero-store-photo{
+    top:-16%;right:0;bottom:-8%;left:0;width:100%;height:auto;
+    transform:translateY(8%);
+    background-size:cover;background-position:center center;
+  }
+  .hero-content{
+    position:absolute;top:100px;right:20px;bottom:auto;left:20px;
+    display:block;width:auto;max-width:none;margin:0;z-index:8;
+  }
+  .hero-title-group,.hero-details-group{
+    position:static;display:block;width:100%;text-align:center;
+  }
+  .hero-title-group .eyebrow{
+    display:block;max-width:none;margin:0 auto 12px;
+    font-size:8px;line-height:1.4;letter-spacing:.13em;text-align:center;
+  }
+  .hero .eyebrow-line{display:none}
+  .hero h1{font-size:clamp(39px,11.8vw,50px);line-height:.92;text-align:center}
+  .hero-details-group{margin-top:clamp(72px,24vw,96px)}
+  .hero-copy{max-width:300px;margin:0 auto 14px;font-size:12px;line-height:1.5;text-align:center}
+  .hero-actions{display:flex;flex-direction:column;align-items:center;gap:9px;margin:0}
+  .hero-actions .button{width:min(300px,100%);min-height:46px;justify-content:center;padding-inline:16px;font-size:9px}
+  .hero-actions .text-link{min-height:32px;font-size:9px}
+  .hero-installment{
+    position:absolute;z-index:9;right:16px;bottom:132px;left:16px;
+    width:auto;max-width:none;margin:0;
+    font-size:clamp(15px,4vw,19px);line-height:1.18;text-align:center;
+  }
+  .hero-material-cards{z-index:9;right:10px;bottom:50px;left:10px;justify-content:center}
+}
+@media(max-width:380px){
+  .hero-store-photo{top:-14%;bottom:-7%;transform:translateY(7%)}
+  .hero-content{top:96px;right:18px;left:18px}
+  .hero-title-group .eyebrow{margin-bottom:10px}
+  .hero h1{font-size:clamp(37px,11.5vw,43px)}
+  .hero-details-group{margin-top:clamp(72px,24vw,88px)}
+  .hero-installment{bottom:128px;font-size:15px}
+  .hero-material-cards{right:8px;bottom:48px;left:8px;gap:4px}
+}

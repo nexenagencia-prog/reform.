@@ -538,3 +538,17 @@ h1,h2,h3,p{margin-top:0}
  #product-grid .product-add span{width:20px;height:20px}
  .shop-footnote{font-size:9px}
 }
+
+/* Ajuste final da hero mobile: imagem story inteira e faixas de respiro */
+@media(max-width:640px){
+  .hero{aspect-ratio:9/16;height:auto;min-height:0;max-height:none;overflow:hidden}
+  .hero-store-photo{top:5%;right:5%;bottom:5%;left:5%;width:auto;height:auto;background-size:100% 100%;background-position:center center}
+  .hero-overlay{background:linear-gradient(180deg,rgba(16,16,14,.40) 0%,rgba(16,16,14,.23) 23%,rgba(16,16,14,.06) 45%,rgba(16,16,14,.04) 63%,rgba(16,16,14,.34) 82%,rgba(16,16,14,.72) 100%)}
+  .hero-content{top:66px;right:20px;bottom:116px;left:20px}
+  .hero-material-cards{right:10px;bottom:11px;left:10px;gap:5px}
+}
+@media(max-width:380px){
+  .hero-store-photo{top:5%;right:5%;bottom:5%;left:5%}
+  .hero-content{top:62px;right:17px;bottom:112px;left:17px}
+  .hero-material-cards{right:8px;bottom:9px;left:8px;gap:4px}
+}
